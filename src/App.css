@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
+
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dummy{
+  overflow: scroll;
 }
+/*-------HOME-------*/
+.main-container{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  width: 100vw;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ 
+
 }
+/*-------HOME-------*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.home{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+text-align: center;
+background-color: #EBEBF0;
+}
+.btn{
+  margin: 1em;
+  margin-left: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/*-------FOOTER-------*/
+.footer{
+  text-align: center;
+  background-color: #F8F9FA;
+  color:black;
+  padding: 1em;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*-------FORM-------*/
+.form-container{
+
+  margin-left: 10em;
+ display: flex;
+  align-items: center;
 }
+.form{
+  width: 90%;
+  max-width: 550px; 
+}
+
+.chatty-blue{
+  color: #0A7BFF;
+}
+.error{
+  color: red;
+}
+/*-------CHAT-ROOM-PAGE-------*/
+.chat-room-container{
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto 1fr ;
+
+
+}
+.chat-room{
+  display: grid;
+  grid-template-columns: 25% 75%;
+overflow-y: hidden;
+
+}
+
+
+
+/*-------ROOM-LIST-------*/
+
+.room-list{
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+ max-height: 100%;
+ width: 100%;
+ 
+
+}
+.your-rooms{
+ 
+  display: grid;
+  max-width: 100%;
+  grid-template-rows: auto 1fr;
+overflow-y: scroll;
+  
+}
+.rooms{
+  max-width: 100%;
+overflow-y: scroll;
+}
+.your-rooms-flex{
+  padding: 1em;
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+} 
+.add-room{
+  cursor: pointer;
+
+}
+
+.user{
+  padding: 1em;
+  display: flex;
+  gap:20px;
+  align-content: center;
+  margin-bottom:2em;
+}
+.initials{
+  align-self: center;
+  padding: 1em;
+  border-radius: 50%;
+ background-color: skyblue;
+ color: white;
+}
+.user h4,.user p{
+  padding:0;
+  margin:0;
+ 
+}
+.room-name{
+
+  padding: 1em;
+  margin:0;
+  cursor: pointer;
+}
+.room-name:hover:not(.active-room){
+  background-color: #F0F3F7;
+}
+.active-room{
+  background-color: #70A9F6;
+}
+
+
+
+/*-------CHATS-COMPONENT-------*/
+.chat-room-title{
+ 
+}
+.chats-container{
+  padding: 1em;
+  max-height: 100% ;
+  background-color: #F0F3F7;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  overflow-y: scroll;
+}
+
+
+h5{
+  color:#585858;
+}
+.chats-container p{
+  color: #A1A1A1;
+}
+
+.chats-container p,.chats-container h5{
+  margin: 0;
+ }
+ .send-chat-bar input{
+  width: 100%;
+  border-radius: 20px;
+  outline: 0;
+  border:0.5px solid #A1A1A1;
+  background-color: #F0F3F7;
+  padding: 0.5em;
+margin:0.1em;
+ }
+ .room-chats-div{
+  overflow-y: scroll;
+   max-width: 100%;
+   
+ }
+ .chat-msg-div{
+   display: grid;
+  color: black;
+   grid-template-columns: auto 1fr ;
+  grid-column-gap: 10px ;
+  margin: 1em 0;
+
+ }
+ .chat-msg-div .initials{
+  text-align: center;
+  
+   padding: 0.7em;
+  }
+  .chat-msg-div h5{
+    align-self: center;
+  }
+
+  .left {
+    position: relative;
+    background: white;
+    text-align: left;
+   
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: auto;
+    display: inline-block;
+   
+  }
+  
+  .left::before {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: -1px;
+    left: -10px;
+    border: 10px solid transparent;
+
+  }
+  
+  .left::after {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: 0px;
+    left: -8px;
+    border: 10px solid transparent;
+    border-top: 10px solid white;
+    clear: both;
+ 
+  }
+  .time-stamp{
+    color: #A1A1A1;
+    font-size: 0.7rem;
+
+  }
+  
+
+
