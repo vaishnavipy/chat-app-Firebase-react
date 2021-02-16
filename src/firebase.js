@@ -2,10 +2,10 @@ import firebase from "firebase"
 
 
 var firebaseConfig = {
-    apiKey: "AIzaSyBanJNzQdIOZG6taOSIzoGOOTukVzR8SAk",
-    authDomain:"reactchatapp-a7e15.firebaseapp.com",
-    databaseURL: "https://reactchatapp-a7e15-default-rtdb.firebaseio.com",
-    projectId: "reactchatapp-a7e15",
+    apiKey: "YOUR API KEY",
+    authDomain:"YOUR_APP.firebaseapp.com",
+    databaseURL: "YOUR DATABASE URL",
+    projectId: "YOUR PROJECT ID",
   
   };
 
