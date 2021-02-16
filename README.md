@@ -2,7 +2,7 @@
 
 Built a Chat web application with Firebase Real-time database. The Chat application will only only authorised users to login thrught their email or social login to login to the chat app. Once logged in , the users can chat with other users in the available chat-rooms or create their own chat room. 
 
-# Firebase provides a suite of tools for authenticating applications, building reactive client apps, reporting analytics, as well as a host of other helpful resources for managing apps in general. In this project Firebase was used for the following functionalities:
+ Firebase provides a suite of tools for authenticating applications, building reactive client apps, reporting analytics, as well as a host of other helpful resources for managing apps in general. In this project Firebase was used for the following functionalities:
 
 - Authentication : Email and password authentication as well as single sign-on capabilities (via Facebook, Twitter and Google).
 - Realtime Database : This is a “NoSQL” database that updates in real time.
